@@ -22,7 +22,7 @@ public class HomeController {
 	}
 	@RequestMapping("/register")
 	public ModelAndView formTest(@RequestParam("fName") String firstName, @RequestParam("lName") String lastName,
-			@RequestParam("email") String email, @RequestParam("phoneNum") int phoneNum,
+			@RequestParam("email") String email, @RequestParam("phoneNum") long phoneNum,
 			@RequestParam("password") String password) {
 		p.setFirstName(firstName);
 		p.setLastName(lastName);

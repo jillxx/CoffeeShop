@@ -6,7 +6,7 @@ public class Person {
 private String firstName;
 private String lastName;
 private String email;
-private int phoneNum;
+private long phoneNum;
 private String password;
 
 
@@ -17,7 +17,7 @@ public Person() {
 
 
 
-public Person(String firstName, String lastName, String email, int phoneNum, String password) {
+public Person(String firstName, String lastName, String email, long phoneNum, String password) {
 	super();
 	this.firstName = firstName;
 	this.lastName = lastName;
@@ -64,13 +64,13 @@ public void setEmail(String email) {
 
 
 
-public int getPhoneNum() {
+public long getPhoneNum() {
 	return phoneNum;
 }
 
 
 
-public void setPhoneNum(int phoneNum) {
+public void setPhoneNum(long phoneNum) {
 	this.phoneNum = phoneNum;
 }
 

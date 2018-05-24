@@ -5,20 +5,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Register</title>
-
+<script>
+/*
+	function formValidate(){
+	var firstName = document.getElementById(fName);
+		if (firstName === null || firstName ===""){
+		alert("Please enter your first name");
+		return false;
+		}
+	}
+	
+	alert('before validate');
+	var submitBtn = document.getElementById(submitBtn);
+	submitBtn.onClick = alert('teest');
+*/
+</script>
 </head>
 <body>
 <h1>Please fill the form to register!</h1>
 	<br>
 	<form action="register">
-	<table border="0">
+	<table>
 		
 		<tr>
 			<td>First Name: </td>
-			<td><input type="text" name="fName"></td>
+			<td><input id="fName" type="text" name="fName"></td>
 		</tr>
 		<tr>
-			<td>Lirst Name: </td>
+			<td>Last Name: </td>
 			<td><input type="text" name="lName"></td>
 		</tr>
         <tr>
@@ -37,7 +51,7 @@
 		
 	</table>
 
-	<input type="submit" value="Register">
+	<input id="submitBtn" type="submit" value="Register">
 	
 	</form>
 </body>
