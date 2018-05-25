@@ -14,7 +14,11 @@ h1 {
 </style>
 </head>
 <body>
-	<h1>Hello, ${person} </h1>
+	<h1>Hello, ${userfirstname} </h1>
 	<h1> Thanks for registering, enjoy your coffee</h1>
+	
+	
+	
+	
 </body>
 </html>

@@ -1,4 +1,4 @@
-package com.gc.coffeeshop.CoffeeShopWebApp;
+package com.gc.coffeeshop.entity;
 
 import org.springframework.stereotype.Component;
 @Component
@@ -9,13 +9,9 @@ private String email;
 private long phoneNum;
 private String password;
 
-
-
-public Person() {
+public Person(){
 
 }
-
-
 
 public Person(String firstName, String lastName, String email, long phoneNum, String password) {
 	super();
