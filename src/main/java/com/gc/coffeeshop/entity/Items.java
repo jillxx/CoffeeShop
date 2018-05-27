@@ -8,6 +8,7 @@ private String name;
 private String description;
 private int quantity;
 private double price;
+private String picturename;
 
 
 public Items() {
@@ -15,13 +16,18 @@ public Items() {
 }
 
 
-public Items(String name, String description, int quantity, double price) {
+
+public Items(String name, String description, int quantity, double price, String picturename) {
 
 	this.name = name;
 	this.description = description;
 	this.quantity = quantity;
 	this.price = price;
+	this.picturename = picturename;
 }
+
+
+
 
 
 public String getName() {
@@ -62,6 +68,19 @@ public double getPrice() {
 public void setPrice(double price) {
 	this.price = price;
 }
+
+
+
+public String getPicturename() {
+	return picturename;
+}
+
+
+
+public void setPicturename(String picturename) {
+	this.picturename = picturename;
+}
+
 
 
 @Override

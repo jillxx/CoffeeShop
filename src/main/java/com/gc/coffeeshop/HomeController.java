@@ -40,5 +40,10 @@ public class HomeController {
 		return new ModelAndView("addUser", "userfirstname", p.getFirstName());
 	}
 
-
+	@RequestMapping("/search")
+	public ModelAndView searchResult(@RequestParam("name") String name) {
+		List<Items> searchItems = coffeeDao.search(name);
+		
+		return new ModelAndView("searchResult","searchItems",searchItems);
+	}
 }

@@ -50,7 +50,7 @@ padding: 10px 20px;
 					<tr>
 						<td>${item.name}</td>
 						<td>${item.description}</td>
-						<td>${item.quantity} lb</td>
+						<td>${item.quantity}</td>
 						<td>$ ${item.price}</td>
 					</tr>
 				</c:forEach>

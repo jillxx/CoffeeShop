@@ -33,9 +33,13 @@ public class coffeeShopDao {
 		return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Items.class));
 	}
 	
-//	public Items Search (String name){
-//		String sql = "SELECT*FROM items WHERE name = ?"; 
-//		
-//		return jdbcTemplate.query(sql, new BeanPropertyRowMapper(Items.class));
-//	}
+	public List<Items> search(String name){
+		
+		String sql = "SELECT * FROM items WHERE name like '%" + name + "%'";
+		//insert the parameter into the sql command.
+		
+		
+	
+		return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Items.class));
+	}
 }
