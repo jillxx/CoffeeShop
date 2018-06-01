@@ -1,9 +1,13 @@
 package com.gc.coffeeshop.entity;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
 
-@Component
+@Entity
+@NamedQuery(name = "find_all_items",query = "select item from Items item")//JPQL
 public class Items {
+@Id //this is for a primary key & you always need a primary key for hibernate
 private String name;
 private String description;
 private int quantity;

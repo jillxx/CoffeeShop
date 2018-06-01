@@ -8,19 +8,30 @@ private String lastName;
 private String email;
 private long phoneNum;
 private String password;
+private String gender;
+private int zipcode;
+private String favorite;
 
 public Person(){
 
 }
 
-public Person(String firstName, String lastName, String email, long phoneNum, String password) {
-	super();
+
+
+
+public Person(String firstName, String lastName, String email, long phoneNum, String password, String gender,
+		int zipcode, String favorite) {
+
 	this.firstName = firstName;
 	this.lastName = lastName;
 	this.email = email;
 	this.phoneNum = phoneNum;
 	this.password = password;
+	this.gender = gender;
+	this.zipcode = zipcode;
+	this.favorite = favorite;
 }
+
 
 
 
@@ -84,11 +95,56 @@ public void setPassword(String password) {
 
 
 
+
+public String getGender() {
+	return gender;
+}
+
+
+
+
+public void setGender(String gender) {
+	this.gender = gender;
+}
+
+
+
+
+public int getZipcode() {
+	return zipcode;
+}
+
+
+
+
+public void setZipcode(int zipcode) {
+	this.zipcode = zipcode;
+}
+
+
+
+
+public String getFavorite() {
+	return favorite;
+}
+
+
+
+
+public void setFavorite(String favorite) {
+	this.favorite = favorite;
+}
+
+
+
+
 @Override
 public String toString() {
 	return "Person [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phoneNum=" + phoneNum
-			+ ", password=" + password + "]";
+			+ ", password=" + password + ", gender=" + gender + ", zipcode=" + zipcode + ", favorite=" + favorite + "]";
 }
+
+
 
 
 
